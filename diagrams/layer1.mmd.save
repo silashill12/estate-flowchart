@@ -1,0 +1,28 @@
+## Estate Strategy Flow: Layer 1 - Income & Entity Foundation
+
+```mermaid
+%% Layer 1: Income & Entity Foundation
+graph TD
+
+subgraph INCOME_SOURCES[🟦 Income Sources]
+  A1["W-2 Income"]
+  A2["1099 / Self-Employment"]
+  A3["Passive Income"]
+  A4["Liquidity Event"]
+  A5["Equity Compensation"]
+end
+
+subgraph ENTITY_PLANNING[🟨 Entity & Planning Structure]
+  B1["Sponsor 401(k) Plan<br>Tax deferral; $23K employee + $46K employer<br>W-2 required"]
+  B2["Form S-Corp or LLC<br>Used for 1099/self-employment; enables Solo 401(k), DB Plan"]
+  B3["Use Existing LLC/FLP<br>Ideal for passive income or family RE holdings"]
+  B4["Pre-Sale Trust Setup<br>For estate freeze: IDGT, GRAT, CRUT, DST"]
+end
+
+A1 -->|Threshold: any W-2 wages<br>Why: defers $23K EE & $46K ER to reduce taxable income| B1
+A2 -->|Threshold: ≥ $400 net SE income<br>≥ $20K net to justify S-Corp election<br>Why: liability shield & enables retirement plans| B2
+A3 -->|When: passive distributions begin<br>Why: flow-through taxation & liability protection| B3
+A4 -->|Trigger: LOI or sale closing<br>Why: freeze basis & shift future gains ahead of 2026 GST sunset| B4
+A5 -->|When: vesting date included in W-2 comp<br>Why: counts toward elective deferrals to limits| B1
+```
+
